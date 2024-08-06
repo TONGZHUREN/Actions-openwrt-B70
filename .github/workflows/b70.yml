@@ -63,7 +63,7 @@ jobs:
         chmod +x $DIY_P1_SH
         git clone https://github.com/kenzok8/openwrt-packages
         git clone https://github.com/kenzok8/small
-		cd openwrt
+        cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: Update feeds
