@@ -40,6 +40,19 @@ sed -i "s/OpenWrt /MOLUN build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" packag
 #wifi密码
 #sed -i 's/key=15581822425/key=gds.2021/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
+# Define My Package
+#git clone https://github.com/vernesong/OpenClash package/molun/luci-app-openclash
+#git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/molun/luci-app-jd-dailybonus
+#git clone https://github.com/rufengsuixing/luci-app-adguardhome package/molun/luci-app-adguardhome
+#git clone https://github.com/sirpdboy/luci-theme-opentopd package/molun/luci-theme-opentopd
+#git clone https://github.com/zzsj0928/luci-app-pushbot package/molun/luci-app-pushbot
+#git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/molun/luci-theme-edge
+#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/molun/luci-theme-argon
+#git clone https://github.com/jerrykuku/luci-app-argon-config package/molun/luci-app-argon-config
+git clone https://github.com/thinktip/luci-theme-neobird package/molun/luci-theme-neobird
+#git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/molun/luci-theme-infinityfreedom
+#git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+
 # 删除软件包
 rm -rf package/lean/luci-theme-argon
 #rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
