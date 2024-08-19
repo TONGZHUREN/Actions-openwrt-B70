@@ -49,9 +49,10 @@ sed -i "s/OpenWrt /MOLUN build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" packag
 #git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/molun/luci-theme-edge
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/molun/luci-theme-argon
 #git clone https://github.com/jerrykuku/luci-app-argon-config package/molun/luci-app-argon-config
-git clone https://github.com/thinktip/luci-theme-neobird package/molun/luci-theme-neobird
 #git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/molun/luci-theme-infinityfreedom
 #git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+git clone https://github.com/thinktip/luci-theme-neobird package/molun/luci-theme-neobird
+git clone https://github.com/tracemouse/luci-theme-netgear package/molun/luci-theme-netgear
 
 # 删除软件包
 rm -rf package/lean/luci-theme-argon
