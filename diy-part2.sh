@@ -35,7 +35,7 @@ sed -i "s/OpenWrt /MOLUN build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" packag
 #sed -i 's/mu_beamformer=0/mu_beamformer=1/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 #wifi加密方式，没有是none
-#sed -i 's/encryption=none/encryption=psk2/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+sed -i 's/encryption=none/encryption=psk2/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 #wifi密码
 #sed -i 's/key=15581822425/key=gds.2021/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
@@ -55,7 +55,7 @@ git clone https://github.com/thinktip/luci-theme-neobird package/molun/luci-them
 git clone https://github.com/tracemouse/luci-theme-netgear package/molun/luci-theme-netgear
 
 # 删除软件包
-rm -rf package/lean/luci-theme-argon
+#rm -rf package/lean/luci-theme-argon
 #rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
 # Add kernel build user
 [ -z $(grep "CONFIG_KERNEL_BUILD_USER=" .config) ] &&
