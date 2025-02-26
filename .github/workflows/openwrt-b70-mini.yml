@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: Actions-openwrt-GeHua GHL-R-001
+name: b70-mini
 
 on:
   repository_dispatch:
